@@ -1,29 +1,39 @@
-<img width="2800" height="400" alt="rx_prism" src="https://github.com/user-attachments/assets/33b436d3-6bae-441e-aa43-f8e0cb6ff31b" />
+<img src="/media/project_header.png" alt="Project Header" style="border-radius: 1rem; width: 150%; height: auto;">
 
-> *P*robably *R*epairs *I*nconsistent *S*e*M*i-transparency
-
-Prism is a fork *(or rather a spiritual fork)* of the original [`Transparent-Pixel-Fix` project by Corecii](https://github.com/Corecii/Transparent-Pixel-Fix), it's an image processing utility designed to help you remove dark outlines on resized images that feature transparent edges.
-
-Think of Prism as a literal prism for your pixels, analyses the colour data from neighbouring pixels, and conveys it further, eliminating the "halo" effect where possible.
-> In most cases Prism removes most, if not all, of the black pixels, but in some cases it might fail and "halo" effects might be visible to some extent.
-
----
-
-<img width="2800" height="250" alt="rx_run" src="https://github.com/user-attachments/assets/315faf68-0875-43d5-a586-375b8bc7ea7a" />
-
-Install all dependencies and compile it via...
-```bash
-npm i
-```
-```bash
-tsc
-```
-
-...and bring up the help menu by running:
-```bash
-node src/prism.js -h
-```
+> prism is, now, a spiritual fork of [`Transparent-Pixel-Fix` project by Corecii](https://github.com/Corecii/Transparent-Pixel-Fix), is it any better? you tell me
+> 
+> it processes images to remove that nasty "black border" with semi-transparent images, as most image editors tend to tint it black
+> 
+> it's mostly tailored for roblox creators, i *might* make a web version sometime in the future
 
 ---
 
-<img width="4000" height="1000" alt="rx_fork" src="https://github.com/user-attachments/assets/61b48902-3e7e-4c51-bc18-e765e09d0db1" />
+<img src="/media/project_sub_run.png" alt="Project Header" style="border-radius: 1rem; width: 150%; height: auto;">
+
+> `npm install` this
+> 
+> `npm run build` that
+> 
+> and bring up the magic menu by running `node src/prism.js --help`
+> 
+> ```
+> Usage: prism [options] [files...]
+> 
+> Probably Repairs Inconsistent Semi-transparency
+>
+> Arguments:
+> files                      PNG images to process
+>
+> Options:
+> -V, --version              output the version number
+> -f, --folder <path d='/'>  Process all .png files in the specified folder
+> -r, --recursive            Scan folders recursively (requires -f) (default: false)
+> -h, --help                 display help for command
+> ```
+
+---
+
+> im sure there are many ways to improve it, so do open an issue or hmu on [discord](http://discord.com/users/1160943839591288893)
+> if you do have any ideas
+> 
+> thaank youuuu x
