@@ -14,21 +14,23 @@
 > 
 > `npm run build` that
 > 
-> and bring up the magic menu by running `node src/prism.js --help`
+> and bring up the magic menu by running `node dist/prism.js --help`
 > 
 > ```
 > Usage: prism [options] [files...]
 > 
 > Probably Repairs Inconsistent Semi-transparency
->
+> 
 > Arguments:
-> files                      PNG images to process
->
+> files                  Images to process (.png, .webp, .avif)
+> 
 > Options:
-> -V, --version              output the version number
-> -f, --folder <path d='/'>  Process all .png files in the specified folder
-> -r, --recursive            Scan folders recursively (requires -f) (default: false)
-> -h, --help                 display help for command
+> -V, --version          output the version number
+> -f, --folder <path>    Process all supported images in a folder
+> -r, --recursive        Scan folders recursively (requires -f) (default: false)
+> -s, --suffix <suffix>  Suffix appended to processed filenames before the extension (default: "fixed")
+> -c, --concurrency <n>  Number of files to process simultaneously
+> -h, --help             display help for command
 > ```
 
 ---
