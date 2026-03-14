@@ -1,5 +1,6 @@
 # PRiSM
-dist/
+dist
+*.js
 
 # Logs
 logs
