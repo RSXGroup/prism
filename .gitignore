@@ -2,6 +2,13 @@
 dist
 *.js
 
+# Rust
+/target
+# Cargo.lock is intentionally committed — this workspace ships a binary.
+
+# wasm-pack output
+/crates/prism-wasm/pkg
+
 # Logs
 logs
 *.log
