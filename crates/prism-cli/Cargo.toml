@@ -1,5 +1,5 @@
 [package]
-name = "prism-cli"
+name = "rsx-prism"
 description = "Command-line tool that repairs the black halo around semi-transparent images."
 version.workspace = true
 edition.workspace = true
@@ -7,6 +7,9 @@ license.workspace = true
 authors.workspace = true
 repository.workspace = true
 rust-version.workspace = true
+readme = "README.md"
+keywords = ["image", "transparency", "alpha", "premultiplied", "roblox"]
+categories = ["command-line-utilities", "multimedia::images"]
 
 [[bin]]
 name = "prism"
@@ -21,7 +24,7 @@ webp = ["image/webp"]
 avif = ["image/avif", "image/avif-native"]
 
 [dependencies]
-prism-core = { workspace = true, features = ["parallel"] }
+rsx-prism-core = { workspace = true, features = ["parallel"] }
 anyhow = "1"
 clap = { version = "4.5", features = ["derive"] }
 image = { version = "0.25", default-features = false }

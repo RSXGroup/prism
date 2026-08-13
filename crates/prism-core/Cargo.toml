@@ -1,5 +1,5 @@
 [package]
-name = "prism-core"
+name = "rsx-prism-core"
 description = "Repairs the RGB data hidden underneath transparent pixels by bleeding the nearest opaque colour outwards."
 version.workspace = true
 edition.workspace = true
@@ -7,6 +7,14 @@ license.workspace = true
 authors.workspace = true
 repository.workspace = true
 rust-version.workspace = true
+readme = "README.md"
+keywords = ["image", "transparency", "alpha", "premultiplied", "roblox"]
+categories = ["multimedia::images", "graphics"]
+
+# The crates.io name is scoped to avoid a collision; the importable name is not.
+[lib]
+name = "prism_core"
+path = "src/lib.rs"
 
 [features]
 default = []

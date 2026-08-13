@@ -872,34 +872,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "prism-cli"
-version = "2.0.0"
-dependencies = [
- "anyhow",
- "clap",
- "image",
- "indicatif",
- "prism-core",
- "rayon",
- "walkdir",
-]
-
-[[package]]
-name = "prism-core"
-version = "2.0.0"
-dependencies = [
- "rayon",
-]
-
-[[package]]
-name = "prism-wasm"
-version = "2.0.0"
-dependencies = [
- "prism-core",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "proc-macro2"
 version = "1.0.107"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1063,6 +1035,34 @@ name = "rgb"
 version = "0.8.53"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "47b34b781b31e5d73e9fbc8689c70551fd1ade9a19e3e28cfec8580a79290cc4"
+
+[[package]]
+name = "rsx-prism"
+version = "2.0.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "image",
+ "indicatif",
+ "rayon",
+ "rsx-prism-core",
+ "walkdir",
+]
+
+[[package]]
+name = "rsx-prism-core"
+version = "2.0.0"
+dependencies = [
+ "rayon",
+]
+
+[[package]]
+name = "rsx-prism-wasm"
+version = "2.0.0"
+dependencies = [
+ "rsx-prism-core",
+ "wasm-bindgen",
+]
 
 [[package]]
 name = "rustversion"

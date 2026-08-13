@@ -11,10 +11,15 @@ repository = "https://github.com/RSXGroup/prism"
 rust-version = "1.85"
 
 [workspace.dependencies]
-prism-core = { path = "crates/prism-core", version = "2.0.0" }
+rsx-prism-core = { path = "crates/prism-core", version = "2.0.0" }
 
 [profile.release]
 opt-level = 3
 lto = "thin"
 codegen-units = 1
 panic = "abort"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
